@@ -71,10 +71,10 @@
       text-align: center;
       position: relative;
       color: #fff;
-      margin-top: 90px; /* Space for the fixed nav */
+      margin-top: 0px; /* Space for the fixed nav */
     }
-    .hero::after {
-      content: "";
+    .hero::after {  
+      content:"";
       position: absolute;
       top: 0;
       left: 0;
@@ -148,6 +148,9 @@
       color: #2196f3;
       transition: transform 0.3s ease;
     }
+    .service-card .skin-care{
+      text-decoration: none;
+    }
     .service-card h2 {
       margin-bottom: 10px;
       font-size: 1.5rem;
@@ -159,6 +162,7 @@
     .service-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
     }
     
     /* Footer */
@@ -214,8 +218,8 @@
     <div class="services-container">
       <div class="service-card" id="health-assist">
         <div class="icon"><i class='bx bx-heart'></i></div>
-        <h2>Health Assist</h2>
-        <p>AI-powered health diagnostics to keep you at your best.</p>
+        <a style="text-decoration: none;" href="booking.html"><h2>Health Assist</h2>
+        <p style="text-decoration: none;">Get your nearest</p></a>
       </div>
       <div class="service-card" id="crop-health">
         <div class="icon"><i class='bx bx-leaf'></i></div>
@@ -224,8 +228,8 @@
       </div>
       <div class="service-card" id="skin-care">
         <div class="icon"><i class='bx bx-user'></i></div>
-        <h2>Skin Care AI</h2>
-        <p>Advanced AI for personalized skin condition analysis.</p>
+        <a  style="text-decoration: none;" href="skin.html"><h2>Skin Care AI</h2>
+        <p style="text-decoration: none;">Advanced AI for personalized skin condition analysis.</p></a>
       </div>
       <div class="service-card" id="know-more">
         <div class="icon"><i class='bx bx-book-reader'></i></div>
